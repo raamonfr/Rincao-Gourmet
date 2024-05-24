@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.cabecalho {
+    position: relative;
+    background-image: url(imgs/mobile/pag-inicial/comida\ gourmet\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    padding: 16px;
+    width: 100vw;
+}
+
+.cabecalho::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.cabecalho > * {
+    position: relative;
+    z-index: 2;
+}
+
+.logo-cabecalho img {
+    width: 150px;
+}
+
+.nav-cabecalho-desktop {
+    display: none;
+}
+
+.nav-cabecalho-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-cabecalho-direito {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.menu-cabecalho-direito i {
+    font-size: 1.5em;
+    color: white;
+}
+.txt-cabecalho {
+    text-align: center;
+    color: white;
+}
+
+.txt-cabecalho h1{
+    color: #F77720;;
+}
+
+.botao {
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    background-color: #F77720;
+    color: white;
+    font-weight: 600;
+    width: 200px;
+    border-radius: 16px;
+    align-self: center;
+}
+
+.bt-header:active{
+    background-color: #f39556;
+}
+
+.barra-menu-lateral {
+    background-color: #0B1C72;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60vw;
+    height: 100vh;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    transform: translateX(1000px);
+    transition: .5s;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.219);
+}
+
+.lista-opcoes, .lista-opcoes a, p {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+#logo-menu-lateral {
+    align-self: center;
+}
+
+p {
+    text-align: center;
+}
+
+.lista-opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media (min-width: 1024px) {
+    .barra-menu-lateral {
+        display: none;
+    }
+
+    .nav-cabecalho-mobile {
+        display: none;
+    }
+
+    .nav-cabecalho-desktop {
+        display: flex;
+        justify-content: center;
+        gap: 26px;
+        align-items: center;
+    }
+
+    .opcoes-nav, .opcoes-nav a{
+        display: flex;
+        list-style: none;
+        gap: 16px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .opcoes-nav a:hover {
+        color: rgb(161, 161, 161);
+    }
+}
