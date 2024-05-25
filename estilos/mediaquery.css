@@ -1,0 +1,50 @@
+/* TODAS AS OUTRAS MEDIAS */
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 950px) {
+    .barra-menu-lateral {
+        display: none;
+    }
+
+    .nav-cabecalho-mobile {
+        display: none;
+    }
+
+    .nav-cabecalho-desktop {
+        display: flex;
+        justify-content: center;
+        gap: 26px;
+        align-items: center;
+    }
+
+    .opcoes-nav, .opcoes-nav a{
+        display: flex;
+        list-style: none;
+        gap: 16px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .opcoes-nav a:hover {
+        color: rgb(161, 161, 161);
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .curiosidades {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .curiosidades {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+}

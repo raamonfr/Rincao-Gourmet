@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* MOBILE FIRST */
+
 * {
     padding: 0;
     margin: 0;
@@ -7,20 +9,24 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    overflow: hidden;
+body, html {
+    overflow-x: hidden;
+}
+
+main {
+    width: 100vw;
 }
 
 .cabecalho {
     position: relative;
-    background-image: url(imgs/mobile/pag-inicial/comida\ gourmet\ 1.jpg);
+    background-image: url(../imgs/mobile/pag-inicial/comida\ gourmet\ 1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     display: flex;
     flex-direction: column;
     gap: 42px;
     padding: 16px;
-    width: 100vw;
 }
 
 .cabecalho::before {
@@ -99,7 +105,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    transform: translateX(1000px);
+    transform: translateX(700px);
     transition: .5s;
     box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.219);
 }
@@ -107,6 +113,9 @@ body {
 .lista-opcoes, .lista-opcoes a, p {
     list-style: none;
     text-decoration: none;
+}
+
+.lista-opcoes a, .barra-menu-lateral p {
     color: white;
 }
 
@@ -116,6 +125,7 @@ body {
 
 p {
     text-align: center;
+    font-weight: lighter;
 }
 
 .lista-opcoes {
@@ -124,31 +134,26 @@ p {
     gap: 16px;
 }
 
-@media (min-width: 1024px) {
-    .barra-menu-lateral {
-        display: none;
-    }
+.curiosidades {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
 
-    .nav-cabecalho-mobile {
-        display: none;
-    }
+.pontos-curio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 280px;
+}
 
-    .nav-cabecalho-desktop {
-        display: flex;
-        justify-content: center;
-        gap: 26px;
-        align-items: center;
-    }
+.pontos-curio figure img {
+    width: 100px;
+}
 
-    .opcoes-nav, .opcoes-nav a{
-        display: flex;
-        list-style: none;
-        gap: 16px;
-        text-decoration: none;
-        color: white;
-    }
-
-    .opcoes-nav a:hover {
-        color: rgb(161, 161, 161);
-    }
+.avaliacoes {
+    height: 600px;
 }
