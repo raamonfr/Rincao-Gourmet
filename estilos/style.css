@@ -88,6 +88,7 @@ main {
     width: 200px;
     border-radius: 16px;
     align-self: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.349);
 }
 
 .bt-header:active{
@@ -125,7 +126,7 @@ main {
 
 p {
     text-align: center;
-    font-weight: lighter;
+    font-weight: 300;
 }
 
 .lista-opcoes {
@@ -155,5 +156,94 @@ p {
 }
 
 .avaliacoes {
-    height: 600px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+}
+
+.box-setas {
+    height: 100%;
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 50px;
+    font-size: xx-large;
+}
+
+#seta-esquerda {
+    left: 0;
+}
+
+#seta-direita {
+    right: 0;
+    background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0));
+}
+
+.avaliacao {
+    width: 100vw;
+    background-image: url(../imgs/mulher-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 14px;
+    overflow: hidden;
+}
+
+.avaliacao div, .avaliacao p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: justify;
+    gap: 10px;
+}
+
+#av-pessoa {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.ft-avaliacao {
+    background-image: url(../imgs/mulher.jpg);
+    width: 100px;
+    height: 100px;
+    background-position: center center;
+    border-radius: 100%;
+}
+
+.avaliacao-comidas {
+    background-color: #F77720;
+    width: 100vw;
+    height: 200px;
+}
+
+.avaliacao-comidas {
+    padding: 38px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+}
+
+.avaliacao-comidas h3 {
+    border-bottom: 2px solid white;
+    padding: 6px;
+}
+
+#avaliar {
+    background-color: #fff;
+    color: black;
 }

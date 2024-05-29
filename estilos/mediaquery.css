@@ -32,13 +32,8 @@
         color: rgb(161, 161, 161);
     }
 
-    main {
-        display: flex;
-        justify-content: center;
-    }
-
-    .curiosidades {
-        width: 80%;
+    .avaliacao {
+        width: 500px;
     }
 }
 
