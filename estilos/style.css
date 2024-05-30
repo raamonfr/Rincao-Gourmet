@@ -91,8 +91,24 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.349);
 }
 
-.bt-header:active{
-    background-color: #f39556;
+.botao:hover {
+    background-color: #a14e16;
+}
+
+.botao:active {
+    background-color: #F77720;
+}
+
+.add-carrinho {
+    background-color: #753a12;
+}
+
+.add-carrinho:hover {
+    background-color: #572b0d;
+}
+
+.add-carrinho:active {
+    background-color: #753a12;
 }
 
 .barra-menu-lateral {
@@ -124,7 +140,7 @@ main {
     align-self: center;
 }
 
-p {
+header p {
     text-align: center;
     font-weight: 300;
 }
@@ -205,26 +221,100 @@ p {
 
 .avaliacao-comidas {
     background-color: #F77720;
-    width: 100vw;
-    height: 200px;
-}
-
-.avaliacao-comidas {
-    padding: 38px;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
-    color: white;
-    justify-content: center;
     align-items: center;
-    gap: 38px;
+    color: white;
+    gap: 1rem;
 }
 
 .avaliacao-comidas h3 {
     border-bottom: 2px solid white;
-    padding: 6px;
+    padding-bottom: .7rem;
+    max-width: 637px;
 }
 
 #avaliar {
     background-color: #fff;
     color: black;
+}
+
+#avaliar:hover {
+    background-color: #d3d3d3;
+    
+}
+
+#avaliar:active {
+    background-color: #fff;
+}
+
+.precos-desconto p:nth-child(1) {
+    text-decoration-line: line-through;
+}
+
+.mini-cardapio {
+    text-align: center;
+    margin: 2.5rem;
+}
+
+.cardapio-mini {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.comida:nth-child(5), .comida:nth-child(6), .comida:nth-child(7), .comida:nth-child(8) {
+    display: none;
+}
+
+.comida figure img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.comida {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.219);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    gap: .5rem;
+}
+
+.precos-desconto {
+    display: flex;
+    gap: .7rem;
+}
+
+.chamando-para-cardapio {
+    background-image: url(../imgs/exemplo-gourmet2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    color: white;
+    padding: 3rem;
+}
+
+.chamando-para-cardapio button {
+    background-color: rgba(255, 255, 255, 0.219);
+}
+
+.chamando-para-cardapio button:hover {
+    background-color: rgba(255, 255, 255, 0.103);
+}
+
+.chamando-para-cardapio button:active {
+    background-color: rgba(255, 255, 255, 0.219);
 }

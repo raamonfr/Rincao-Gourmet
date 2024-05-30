@@ -1,7 +1,9 @@
 /* TODAS AS OUTRAS MEDIAS */
 
 @media screen and (min-width: 768px) {
-    
+    .comida {
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 950px) {
@@ -40,5 +42,19 @@
 
     .avaliacoes {
         flex-direction: row;
+    }
+
+    .comida {
+        flex-direction: column;
+        width: 20%;
+    }
+
+    .cardapio-mini {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .comida:nth-child(5), .comida:nth-child(6), .comida:nth-child(7), .comida:nth-child(8) {
+        display: flex;
     }
 }
