@@ -31,15 +31,14 @@
     .opcoes-nav a:hover {
         color: rgb(161, 161, 161);
     }
-
-    .avaliacao {
-        width: 500px;
-    }
 }
 
 @media screen and (min-width: 1200px) {
     .curiosidades {
-        width: 100%;
         flex-wrap: nowrap;
+    }
+
+    .avaliacoes {
+        flex-direction: row;
     }
 }

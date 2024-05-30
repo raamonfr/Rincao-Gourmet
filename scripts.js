@@ -14,7 +14,6 @@ function abrirMenu() {
 function fecharMenu() {
     barraMenuLateral.style.transform = 'translateX(700px)'
     menuAberto = false
-
     document.body.classList.remove('no-scroll');
     document.removeEventListener('touchmove', preventScroll, { passive: false });
 }

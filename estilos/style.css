@@ -139,7 +139,7 @@ p {
     display: flex;
     justify-content: center;
     gap: 64px;
-    margin-top: 60px;
+    margin: 60px 20px 0px 20px;
     flex-wrap: wrap;
 }
 
@@ -156,36 +156,15 @@ p {
 }
 
 .avaliacoes {
-    height: 500px;
     display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    position: relative;
-}
-
-.box-setas {
-    height: 100%;
-    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
-    color: white;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    padding: 50px;
-    font-size: xx-large;
-}
-
-#seta-esquerda {
-    left: 0;
-}
-
-#seta-direita {
-    right: 0;
-    background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0));
+    margin-top: 40px;
+    gap: 2rem;
 }
 
 .avaliacao {
-    width: 100vw;
     background-image: url(../imgs/mulher-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -197,7 +176,7 @@ p {
     align-items: center;
     padding: 30px;
     gap: 14px;
-    overflow: hidden;
+    margin: 0px 20px;
 }
 
 .avaliacao div, .avaliacao p {
@@ -209,16 +188,18 @@ p {
     gap: 10px;
 }
 
-#av-pessoa {
-    padding-left: 60px;
-    padding-right: 60px;
+.ft-avaliacao {
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    padding: 6px;
 }
 
-.ft-avaliacao {
-    background-image: url(../imgs/mulher.jpg);
+.ft-avaliacao img {
     width: 100px;
     height: 100px;
-    background-position: center center;
     border-radius: 100%;
 }
 
