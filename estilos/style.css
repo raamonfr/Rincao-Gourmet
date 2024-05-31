@@ -25,8 +25,8 @@ main {
     background-position: center center;
     display: flex;
     flex-direction: column;
-    gap: 42px;
-    padding: 16px;
+    gap: 2.6rem;
+    padding: 1rem;
 }
 
 .cabecalho::before {
@@ -46,7 +46,7 @@ main {
 }
 
 .logo-cabecalho img {
-    width: 150px;
+    width: 9.3rem;
 }
 
 .nav-cabecalho-desktop {
@@ -62,7 +62,7 @@ main {
 .menu-cabecalho-direito {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .menu-cabecalho-direito i {
@@ -80,19 +80,21 @@ main {
 
 .botao {
     border: none;
-    padding: 12px;
+    padding: .75rem;
     cursor: pointer;
     background-color: #F77720;
     color: white;
     font-weight: 600;
-    width: 200px;
-    border-radius: 16px;
+    width: 12.5rem;
+    border-radius: 1rem;
     align-self: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.349);
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.349);
+    transition: .3s;
 }
 
 .botao:hover {
     background-color: #a14e16;
+    transform: scale(1.1);
 }
 
 .botao:active {
@@ -118,13 +120,13 @@ main {
     top: 0;
     width: 60vw;
     height: 100vh;
-    padding: 16px;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    transform: translateX(700px);
+    gap: 1.5rem;
+    transform: translateX(43.75rem);
     transition: .5s;
-    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.219);
+    box-shadow: -0.3rem 0 .6rem rgba(0, 0, 0, 0.219);
 }
 
 .lista-opcoes, .lista-opcoes a, p {
@@ -148,14 +150,14 @@ header p {
 .lista-opcoes {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .curiosidades {
     display: flex;
     justify-content: center;
-    gap: 64px;
-    margin: 60px 20px 0px 20px;
+    gap: 4rem;
+    margin: 3.7rem 1.2rem 0 1.2rem;
     flex-wrap: wrap;
 }
 
@@ -164,11 +166,11 @@ header p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 280px;
+    width: 17.5rem;
 }
 
 .pontos-curio figure img {
-    width: 100px;
+    width: 6.2rem;
 }
 
 .avaliacoes {
@@ -176,7 +178,7 @@ header p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 2.5rem;
     gap: 2rem;
 }
 
@@ -185,14 +187,19 @@ header p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    border-radius: 30px;
+    border-radius: 1.87rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
-    gap: 14px;
-    margin: 0px 20px;
+    padding: 1.87rem;
+    gap: .8rem;
+    margin: 0 1.25rem;
+    transition: .5s;
+}
+
+.avaliacao:hover {
+    transform: scale(0.8);
 }
 
 .avaliacao div, .avaliacao p {
@@ -201,7 +208,7 @@ header p {
     align-items: center;
     color: white;
     text-align: justify;
-    gap: 10px;
+    gap: .6rem;
 }
 
 .ft-avaliacao {
@@ -210,12 +217,12 @@ header p {
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    padding: 6px;
+    padding: .3rem;
 }
 
 .ft-avaliacao img {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     border-radius: 100%;
 }
 
@@ -272,8 +279,8 @@ header p {
 }
 
 .comida figure img {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     border-radius: 100%;
 }
 

@@ -23,14 +23,14 @@
     .nav-cabecalho-desktop {
         display: flex;
         justify-content: center;
-        gap: 26px;
+        gap: 1.6rem;
         align-items: center;
     }
 
     .opcoes-nav, .opcoes-nav a{
         display: flex;
         list-style: none;
-        gap: 16px;
+        gap: 1rem;
         text-decoration: none;
         color: white;
     }
