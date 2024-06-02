@@ -1,9 +1,9 @@
 let barraMenuLateral = document.getElementById('barra-leteral-menu'), 
-    barrasMenu = document.getElementById('barras-menu');
+barrasMenu = document.getElementById('barras-menu');
 const botaoAddCarrinho = document.querySelectorAll('.add-carrinho'),
-      notificacao = document.querySelector('.notificacao'),
-      iconeFechar = document.querySelector('.fechar'), 
-      tempo = document.querySelector('.tempo');
+notificacao = document.querySelector('.notificacao'),
+iconeFechar = document.querySelector('.fechar'), 
+tempo = document.querySelector('.tempo');
 var menuAberto = false
 
 
