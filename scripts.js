@@ -1,5 +1,9 @@
-let barraMenuLateral = document.getElementById('barra-leteral-menu')
-let barrasMenu = document.getElementById('barras-menu')
+let barraMenuLateral = document.getElementById('barra-leteral-menu'), 
+    barrasMenu = document.getElementById('barras-menu');
+const botaoAddCarrinho = document.querySelectorAll('.add-carrinho'),
+      notificacao = document.querySelector('.notificacao'),
+      iconeFechar = document.querySelector('.fechar'), 
+      tempo = document.querySelector('.tempo');
 var menuAberto = false
 
 
@@ -33,7 +37,29 @@ document.addEventListener('click', (event) => {
 })
 
 
-
 function irparaocardapio() {
     window.location.href = './pags/cardapio.html'
 }
+
+botaoAddCarrinho.forEach(botao => {
+    botao.addEventListener('click', () => {
+        notificacao.classList.add('ativo')
+        tempo.classList.add('ativo')
+
+        setTimeout(() => {
+            notificacao.classList.remove('ativo')
+        }, 5000)
+
+        setTimeout(() => {
+            tempo.classList.remove('ativo')
+        }, 5300)
+    })
+})
+
+iconeFechar.addEventListener('click', () => {
+    notificacao.classList.remove('ativo')
+
+    setTimeout(() => {
+        tempo.classList.remove('ativo')
+    }, 300)
+})

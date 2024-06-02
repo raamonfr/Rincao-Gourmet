@@ -51,6 +51,14 @@
     .filtros {
         flex-direction: row;
     }
+
+    .mensagem .texto {
+        font-size: 1rem;
+    }
+
+    .notificacao .fechar:hover {
+        opacity: 1;
+    }
 }
 
 @media screen and (min-width: 1200px) {

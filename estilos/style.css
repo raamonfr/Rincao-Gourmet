@@ -13,13 +13,16 @@ body, html {
     overflow-x: hidden;
 }
 
+body {
+    position: relative;
+}
+
 main {
     width: 100vw;
 }
 
 .cabecalho {
-    position: relative;
-    background-image: url(../imgs/mobile/pag-inicial/comida\ gourmet\ 1.jpg);
+    background-image: url(../imgs/bg/bg-cabecalho.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -27,22 +30,6 @@ main {
     flex-direction: column;
     gap: 2.6rem;
     padding: 1rem;
-}
-
-.cabecalho::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 1;
-}
-
-.cabecalho > * {
-    position: relative;
-    z-index: 2;
 }
 
 .logo-cabecalho img {
@@ -314,7 +301,7 @@ main {
 }
 
 .chamando-para-cardapio {
-    background-image: url(../imgs/exemplo-gourmet2.jpg);
+    background-image: url(../imgs/bg/bg-chamado-menu-homepage.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -483,4 +470,94 @@ footer figure img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.notificacao {
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 1rem 2rem 1rem 1.3rem;
+    border-left: .5rem solid #F77720;
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.notificacao.ativo {
+    transform: translateX(0%);
+}
+
+.notificacao .conteudo-notificacao {
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-notificacao .check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    background-color: #F77720;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+.conteudo-notificacao .mensagem {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.2rem;
+}
+
+.mensagem .texto {
+    font-weight: 400;
+    color: #666666;
+    font-size: .7rem;
+}
+
+.mensagem .texto.texto-1 {
+    font-weight: 600;
+    color: #333333;
+}
+
+.notificacao .fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: .5rem;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.notificacao .tempo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.notificacao .tempo:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #F77720;
+}
+
+.tempo.ativo:before {
+    animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+    100% {
+      right: 100%;  
+    }
 }
