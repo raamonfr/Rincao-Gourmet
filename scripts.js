@@ -41,6 +41,10 @@ function irparaocardapio() {
     window.location.href = './pags/cardapio.html'
 }
 
+function irparacarrinho() {
+    window.location.href = '../pags/carrinho.html'
+}
+
 botaoAddCarrinho.forEach(botao => {
     botao.addEventListener('click', () => {
         notificacao.classList.add('ativo')
