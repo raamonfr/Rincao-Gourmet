@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="../estilos/style.css" media="all">
+    <link rel="stylesheet" href="../estilos/mediaquery.css">
+    <link rel="shortcut icon" href="../imgs/favicon/favicon.ico" type="image/x-icon">
+    <title>Rinção Gourmet</title>
+</head>
+<body>
+    <header id="cabecalho-cardapio" class="cabecalho">
+        <nav class="nav-cabecalho-desktop">
+            <ul class="opcoes-nav">
+                <li><a href="../index.html">Início</a></li> 
+                <li><a href="../pags/cardapio.html">Menu</a></li>
+                <li><a href="#">Localização</a></li>
+            </ul>
+
+            <figure class="logo-cabecalho">
+                <a href="../index.html">
+                    <img src="../imgs/rincao-gourmet.png" alt="Logo Rinção Gourmet">
+                </a>
+            </figure>
+
+            <ul class="opcoes-nav">
+                <li><a href="#">Carrinho</a></li>
+                <li><a href="#">Vagas</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-cabecalho-mobile">
+            <figure class="logo-cabecalho">
+                <a href="../index.html">
+                    <img src="../imgs/rincao-gourmet.png" alt="Logo Rinção Gourmet">
+                </a>
+            </figure>
+
+            <div class="menu-cabecalho-direito">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i id="barras-menu" class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <section class="txt-cabecalho">
+            <p>Nosso cardápio</p>
+        </section>
+
+        <nav id="barra-leteral-menu" class="barra-menu-lateral">
+            <figure id="logo-menu-lateral" class="logo-cabecalho">
+                <a href="../index.html">
+                    <img src="../imgs/rincao-gourmet.png" alt="Logo Rinção Gourmet">
+                </a>
+            </figure>
+
+            <p>Sempre oferencendo o melhor da culinária Pernambucana</p>
+
+            <ul class="lista-opcoes">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../pags/cardapio.html">Menu</a></li>
+                <li><a href="#">Localização</a></li>
+                <li><a href="#">Carrinho</a></li>
+                <li><a href="#">Trabalho</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+
+            <button class="botao">Deixe sua avaliação</button>
+        </nav>
+    </header>
+
+    <main id="main-cardapio">
+        <section class="filtragem">
+            <h3>Pesquisa filtrada</h3>
+            
+            <section class="filtros">
+                <div id="tipodeculinaria" class="filtro">
+                    <i class="fa-solid fa-utensils"></i>Tipo de Culinária
+                    <select name="filtragemculinaria" id="tiposculinaria">
+                        <option value=""></option>
+                        <option value="">Alemã</option>
+                        <option value="">Asiática</option>
+                        <option value="">Autoral</option>
+                        <option value="">Açai</option>
+                        <option value="">Bar</option>
+                        <option value="">Brasileira</option>
+                        <option value="">Cafeteira</option>
+                        <option value="">Carnes</option>
+                        <option value="">Churrascaria</option>
+                        <option value="">Comida de boteco</option>
+                        <option value="">Contemporânia</option>
+                        <option value="">Creole</option>
+                        <option value="">Doces</option>
+                        <option value="">Europeia</option>
+                        <option value="">Franco italiana</option>
+                    </select>
+                </div>
+
+                <div id="precos" class="filtro">
+                    <i class="fa-solid fa-dollar-sign"></i>Preço
+                    <select name="filtragempreco" id="preco">
+                        <option value=""></option>
+                        <option value="">Do menor para o maior</option>
+                        <option value="">Do maior para o menor</option>
+                    </select>
+                </div>
+                    
+                <div id="avaliacoes" class="filtro">
+                    <i class="fa-solid fa-star"></i>Avaliação
+
+                    <select name="filtragemavaliacao" id="avaliacao">
+                        <option value=""></option>
+                        <option value="">Do menor para o maior</option>
+                    </select>
+                </div>
+            </section>
+        </section>
+
+        <section class="cardapio mini-cardapio cardapio-mini">
+            <div class="comida">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="Foto Comida Gourmet">
+                </figure>
+                
+                   
+                <h4>Comida Gourmet</h4>
+
+                <div class="precos-desconto">
+                    <p>R$32,90</p>
+                    <p> - </p>
+                    <p>R$23,99</p>
+                </div>
+
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="comida">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="Foto Comida Gourmet">
+                </figure>
+                
+                   
+                <h4>Comida Gourmet</h4>
+
+                <div class="precos-desconto">
+                    <p>R$32,90</p>
+                    <p> - </p>
+                    <p>R$23,99</p>
+                </div>
+
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+                        
+            <div class="comida">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="Foto Comida Gourmet">
+                </figure>
+                
+                   
+                <h4>Comida Gourmet</h4>
+
+                <div class="precos-desconto">
+                    <p>R$32,90</p>
+                    <p> - </p>
+                    <p>R$23,99</p>
+                </div>
+
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+                        
+            <div class="comida">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="Foto Comida Gourmet">
+                </figure>
+                
+                   
+                <h4>Comida Gourmet</h4>
+
+                <div class="precos-desconto">
+                    <p>R$32,90</p>
+                    <p> - </p>
+                    <p>R$23,99</p>
+                </div>
+
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+                        
+            <div class="comida">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="Foto Comida Gourmet">
+                </figure>
+                
+                   
+                <h4>Comida Gourmet</h4>
+
+                <div class="precos-desconto">
+                    <p>R$32,90</p>
+                    <p> - </p>
+                    <p>R$23,99</p>
+                </div>
+
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+                        
+            <div class="comida">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="Foto Comida Gourmet">
+                </figure>
+                
+                   
+                <h4>Comida Gourmet</h4>
+
+                <div class="precos-desconto">
+                    <p>R$32,90</p>
+                    <p> - </p>
+                    <p>R$23,99</p>
+                </div>
+
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+                        
+            <div class="comida">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="Foto Comida Gourmet">
+                </figure>
+                
+                   
+                <h4>Comida Gourmet</h4>
+
+                <div class="precos-desconto">
+                    <p>R$32,90</p>
+                    <p> - </p>
+                    <p>R$23,99</p>
+                </div>
+
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+                        
+            <div class="comida">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="Foto Comida Gourmet">
+                </figure>
+                
+                   
+                <h4>Comida Gourmet</h4>
+
+                <div class="precos-desconto">
+                    <p>R$32,90</p>
+                    <p> - </p>
+                    <p>R$23,99</p>
+                </div>
+
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+                        
+            <div class="comida">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="Foto Comida Gourmet">
+                </figure>
+                
+                   
+                <h4>Comida Gourmet</h4>
+
+                <div class="precos-desconto">
+                    <p>R$32,90</p>
+                    <p> - </p>
+                    <p>R$23,99</p>
+                </div>
+
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+                        
+            <div class="comida">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="Foto Comida Gourmet">
+                </figure>
+                
+                   
+                <h4>Comida Gourmet</h4>
+
+                <div class="precos-desconto">
+                    <p>R$32,90</p>
+                    <p> - </p>
+                    <p>R$23,99</p>
+                </div>
+
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+                        
+            <div class="comida">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="Foto Comida Gourmet">
+                </figure>
+                
+                   
+                <h4>Comida Gourmet</h4>
+
+                <div class="precos-desconto">
+                    <p>R$32,90</p>
+                    <p> - </p>
+                    <p>R$23,99</p>
+                </div>
+
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+                        
+            <div class="comida">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="Foto Comida Gourmet">
+                </figure>
+                
+                   
+                <h4>Comida Gourmet</h4>
+
+                <div class="precos-desconto">
+                    <p>R$32,90</p>
+                    <p> - </p>
+                    <p>R$23,99</p>
+                </div>
+
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+                                    
+            <div class="comida">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="Foto Comida Gourmet">
+                </figure>
+                
+                   
+                <h4>Comida Gourmet</h4>
+
+                <div class="precos-desconto">
+                    <p>R$32,90</p>
+                    <p> - </p>
+                    <p>R$23,99</p>
+                </div>
+
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+                                    
+            <div class="comida">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="Foto Comida Gourmet">
+                </figure>
+                
+                   
+                <h4>Comida Gourmet</h4>
+
+                <div class="precos-desconto">
+                    <p>R$32,90</p>
+                    <p> - </p>
+                    <p>R$23,99</p>
+                </div>
+
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+                                    
+            <div class="comida">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="Foto Comida Gourmet">
+                </figure>
+                
+                   
+                <h4>Comida Gourmet</h4>
+
+                <div class="precos-desconto">
+                    <p>R$32,90</p>
+                    <p> - </p>
+                    <p>R$23,99</p>
+                </div>
+
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+                                    
+            <div class="comida">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="Foto Comida Gourmet">
+                </figure>
+                
+                   
+                <h4>Comida Gourmet</h4>
+
+                <div class="precos-desconto">
+                    <p>R$32,90</p>
+                    <p> - </p>
+                    <p>R$23,99</p>
+                </div>
+
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <button id="botao-carrinho" class="botao">Ir para o Carrinho</button>
+
+        <div class="avaliacao-comidas">
+            <h3>Já provou da nossa comida e também quer deixar sua avaliação? Avalie aqui:</h3>
+
+            <button class="botao">Avaliar</button>
+        </div>
+    </main>
+
+    <footer>
+        <figure>
+            <img src="../imgs/rincao-gourmet.png" alt="Logo Rinção Gourmet">
+        </figure>
+
+        <nav class="links-rodape">
+            <a href="../index.html">Início</a>
+            <a href="../pags/cardapio.html">Menu</a>
+            <a href="#">Localização</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Trabalho</a>
+            <a href="#">Sobre nós</a>
+            <a href="#">FAQ</a>
+        </nav>
+
+        <div class="redes-sociais">
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+
+        <p>©️ Rinção Gourmet 2024</p>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

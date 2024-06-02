@@ -101,11 +101,11 @@ main {
     background-color: #F77720;
 }
 
-.add-carrinho {
-    background-color: #753a12;
+.add-carrinho, .cardapio button, #main-cardapio #botao-carrinho {
+    background-color: #a14e16;
 }
 
-.add-carrinho:hover {
+.add-carrinho:hover, .cardapio button:hover, #main-cardapio #botao-carrinho:hover {
     background-color: #572b0d;
 }
 
@@ -157,7 +157,7 @@ header p {
     display: flex;
     justify-content: center;
     gap: 4rem;
-    margin: 3.7rem 1.2rem 0 1.2rem;
+    margin: 8rem 1.2rem;
     flex-wrap: wrap;
 }
 
@@ -262,7 +262,10 @@ header p {
 
 .mini-cardapio {
     text-align: center;
-    margin: 2.5rem;
+    margin: 8rem 2.5rem 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 .cardapio-mini {
@@ -274,7 +277,7 @@ header p {
     gap: 2rem;
 }
 
-.comida:nth-child(5), .comida:nth-child(6), .comida:nth-child(7), .comida:nth-child(8) {
+#cardapio-mini  .comida:nth-child(5), #cardapio-mini  .comida:nth-child(6), #cardapio-mini  .comida:nth-child(7), #cardapio-mini  .comida:nth-child(8) {
     display: none;
 }
 
@@ -285,6 +288,7 @@ header p {
 }
 
 .comida {
+    background-color: white;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -397,4 +401,68 @@ footer figure img {
     gap: 2rem;
     border-top: 2px solid white;
     padding: 1rem;
+}
+
+#main-cardapio {
+    background-image: url(../imgs/bg/vetores-bg-cardapio-desktop.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.filtragem {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.295);
+    border-radius: 1rem;
+    max-width: 1024px;
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.filtro select {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.cardapio {
+    margin: 4rem;
+}
+
+#main-cardapio .avaliacao-comidas {
+    margin-top: 3rem;
+    background-color: white;
+}
+
+#main-cardapio .avaliacao-comidas h3 {
+    color: #F77720;
+    border-color: #F77720;
+}
+
+#cabecalho-cardapio {
+    height: 240px;
+}
+
+#cabecalho-cardapio .txt-cabecalho {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

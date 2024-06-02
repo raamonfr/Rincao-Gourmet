@@ -32,3 +32,8 @@ document.addEventListener('click', (event) => {
     }
 })
 
+
+
+function irparaocardapio() {
+    window.location.href = './pags/cardapio.html'
+}

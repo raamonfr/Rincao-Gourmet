@@ -10,11 +10,11 @@
     <title>Rinção Gourmet</title>
 </head>
 <body>
-    <header class="cabecalho">
+    <header id="cabecalho-homepage" class="cabecalho">
         <nav class="nav-cabecalho-desktop">
             <ul class="opcoes-nav">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Menu</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="./pags/cardapio.html">Menu</a></li>
                 <li><a href="#">Localização</a></li>
             </ul>
 
@@ -49,7 +49,7 @@
             <p>Bem-Vindo ao Nosso Restaurante Gourmet</p>
         </section>
 
-        <button class="botao">Nosso cardápio</button>
+        <button onclick="irparaocardapio()" class="botao">Nosso cardápio</button>
 
         <nav id="barra-leteral-menu" class="barra-menu-lateral">
             <figure id="logo-menu-lateral" class="logo-cabecalho">
@@ -61,8 +61,8 @@
             <p>Sempre oferencendo o melhor da culinária Pernambucana</p>
 
             <ul class="lista-opcoes">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Menu</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="./pags/cardapio.html">Menu</a></li>
                 <li><a href="#">Localização</a></li>
                 <li><a href="#">Carrinho</a></li>
                 <li><a href="#">Trabalho</a></li>
@@ -161,7 +161,6 @@
 
                 <p>Lorem ipsum dolor sit amet. Sed distinctio libero et minima laborum eos earum quia! Et voluptatum corrupti hic maiores veritatis aut dignissimos odio</p>
             </div>
-            
         </section>
 
         <div class="avaliacao-comidas">
@@ -173,7 +172,7 @@
         <section class="mini-cardapio">
             <h3>Dê uma breve olhada no nosso cardápio</h3>
 
-            <div class="cardapio-mini">
+            <div id="cardapio-mini" class="cardapio-mini">
                 <div class="comida">
                     <figure>
                         <img src="imgs/exemplo-gourmet1.jpg" alt="Exemplo de Comida Gourmet">
@@ -307,7 +306,7 @@
         <div class="chamando-para-cardapio">
             <h3>Veja o resto do nosso cardápio clicando no botão abaixo:</h3>
 
-            <button class="botao">Ver Cardápio</button>
+            <button onclick="irparaocardapio()" class="botao">Ver Cardápio</button>
         </div>
 
         <section class="novidades">
@@ -340,8 +339,8 @@
         </figure>
 
         <nav class="links-rodape">
-            <a href="#">Início</a>
-            <a href="#">Menu</a>
+            <a href="index.html">Início</a>
+            <a href="./pags/cardapio.html">Menu</a>
             <a href="#">Localização</a>
             <a href="#">Carrinho</a>
             <a href="#">Trabalho</a>
