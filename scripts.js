@@ -1,36 +1,11 @@
 // Declaração de variáveis
-const barraMenuLateral = document.getElementById('barra-consteral-menu');
-const barrasMenu = document.getElementById('barras-menu');
-const botaoAddCarrinho = document.querySelectorAll('.add-carrinho');
-const notificacao = document.querySelector('.notificacao');
-const iconeFechar = document.querySelector('.fechar');
-const tempo = document.querySelector('.tempo');
+let barraMenuLateral = document.getElementById('barra-leteral-menu');
+let barrasMenu = document.getElementById('barras-menu');
+let botaoAddCarrinho = document.querySelectorAll('.add-carrinho');
+let notificacao = document.querySelector('.notificacao');
+let iconeFechar = document.querySelector('.fechar');
+let tempo = document.querySelector('.tempo');
 let menuAberto = false;
-
-// Evento de click nos botoes "add-carrinho" pra aparecer a notificacaozinha show
-botaoAddCarrinho.forEach(botao => {
-    botao.addEventListener('click', () => {
-        notificacao.classList.add('ativo');
-        tempo.classList.add('ativo');
-
-        setTimeout(() => {
-            notificacao.classList.remove('ativo');
-        }, 5000);
-
-        setTimeout(() => {
-            tempo.classList.remove('ativo');
-        }, 5300);
-    });
-});
-
-// Evento de click no icone de fechar da notificacao
-iconeFechar.addEventListener('click', () => {
-    notificacao.classList.remove('ativo');
-
-    setTimeout(() => {
-        tempo.classList.remove('ativo');
-    }, 300);
-});
 
 // Função para abrir o menu lateral
 function abrirMenu() {
@@ -75,3 +50,28 @@ function irParaCarrinho() {
 function irFinalizaCompra() {
     window.location.href = '../pags/finalizarCompra.html';
 }
+
+// Evento de click nos botoes "add-carrinho" pra aparecer a notificacaozinha show
+botaoAddCarrinho.forEach(botao => {
+    botao.addEventListener('click', () => {
+        notificacao.classList.add('ativo');
+        tempo.classList.add('ativo');
+
+        setTimeout(() => {
+            notificacao.classList.remove('ativo');
+        }, 5000);
+
+        setTimeout(() => {
+            tempo.classList.remove('ativo');
+        }, 5300);
+    });
+});
+
+// Evento de click no icone de fechar da notificacao
+iconeFechar.addEventListener('click', () => {
+    notificacao.classList.remove('ativo');
+
+    setTimeout(() => {
+        tempo.classList.remove('ativo');
+    }, 300);
+});
