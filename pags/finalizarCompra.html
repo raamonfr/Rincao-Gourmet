@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="../estilos/style.css" media="all">
+    <link rel="stylesheet" href="../estilos/mediaquery.css">
+    <link rel="shortcut icon" href="../imgs/favicon/favicon.ico" type="image/x-icon">
+    <title>Rinção Gourmet</title>
+</head>
+<body>
+    <header id="cabecalho-finalizarCompra" class="cabecalho">
+        <nav class="nav-cabecalho-desktop">
+            <ul class="opcoes-nav">
+                <li><a href="../index.html">Início</a></li> 
+                <li><a href="../pags/cardapio.html">Menu</a></li>
+                <li><a href="#">Localização</a></li>
+            </ul>
+
+            <figure class="logo-cabecalho">
+                <a href="../index.html">
+                    <img src="../imgs/rincao-gourmet.png" alt="Logo Rinção Gourmet">
+                </a>
+            </figure>
+
+            <ul class="opcoes-nav">
+                <li><a href="../pags/carrinho.html">Carrinho</a></li>
+                <li><a href="#">Vagas</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-cabecalho-mobile">
+            <figure class="logo-cabecalho">
+                <a href="../index.html">
+                    <img src="../imgs/rincao-gourmet.png" alt="Logo Rinção Gourmet">
+                </a>
+            </figure>
+
+            <div class="menu-cabecalho-direito">
+                <a href="../pags/carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <i id="barras-menu" class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <section class="txt-cabecalho">
+            <p>Finalizando compra</p>
+        </section>
+
+        <nav id="barra-leteral-menu" class="barra-menu-lateral">
+            <figure id="logo-menu-lateral" class="logo-cabecalho">
+                <a href="../index.html">
+                    <img src="../imgs/rincao-gourmet.png" alt="Logo Rinção Gourmet">
+                </a>
+            </figure>
+
+            <p>Sempre oferencendo o melhor da culinária Pernambucana</p>
+
+            <ul class="lista-opcoes">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../pags/cardapio.html">Menu</a></li>
+                <li><a href="#">Localização</a></li>
+                <li><a href="../pags/carrinho.html">Carrinho</a></li>
+                <li><a href="#">Trabalho</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+
+            <button class="botao">Deixe sua avaliação</button>
+        </nav>
+    </header>
+
+    <main id="main-finalizarCompra">
+        <section class="resumo-pedido">
+            <h3>Resumo do pedido</h3>
+
+            <div class="inf-resumo">
+                <label for="idcupom">Cupom:</label>
+                <input type="text" name="cupom" id="idcupom" placeholder="Digite o cupom aqui">
+            </div>
+
+            <div class="inf-resumo">
+                <p>Frete + Taxa:</p>
+                <p>R$15,90</p>
+            </div>
+
+            <div class="inf-resumo">
+                <p>Subtotal:</p>
+                <p>R$95,96</p>
+            </div>
+
+            <div class="inf-resumo">
+                <p>Total:</p>
+                <p>R$111,86</p>
+            </div>
+
+            <button class="botao">Comprar</button>
+        </section>
+
+        <section class="inf-pessoais">
+            <ul>
+                <li>Informações Pessoais</li>
+            </ul>
+
+            <div class="input-duplo">
+                <div>
+                    <label for="idnome">Nome</label>
+                    <input type="text" name="nome" id="idnome">
+                </div>
+                <div>
+                    <label for="idsobrenome">Sobrenome</label>
+                    <input type="text" name="Sobrenome" id="idsobrenome">
+                </div>
+            </div>
+
+            <div>
+                <label for="idemail">Email</label>
+                <input type="email" name="email" id="idemail">
+            </div>
+
+            <div>
+                <label for="idendereco">Endereço</label>
+                <input type="text" name="endereco" id="idendereco">
+            </div>
+
+            <div class="input-duplo">
+                <div>
+                    <label for="idnumero">Número</label>
+                    <input type="number" name="numero" id="idnumero">
+                </div>
+
+                <div>
+                    <label for="idcep">CEP</label>
+                    <input type="number" name="cep" id="idcep">
+                </div>
+            </div>
+
+            <div>
+                <label for="idcomplemento">Complemento/Ponto de referência</label>
+                <input type="text" name="complemento" id="idcomplemento">
+            </div>
+
+            <div class="input-duplo">
+                <div>
+                    <label for="idtelefone">Telefone</label>
+                    <input type="number" name="telefone" id="idtelefone">
+                </div>
+
+                <div>
+                    <label for="idcpf">CPF</label>
+                    <input type="number" name="cpf" id="idcpf">
+                </div>
+            </div>
+        </section>
+
+        <section class="metodos-pagamento">
+            <ul>
+                <li>Métodos de Pagamento</li>
+            </ul>
+
+            <div id="pix" class="bt-mtd-pgt">
+                <i class="fa-brands fa-pix"></i>
+                <p>PIX</p>
+            </div>
+
+            <div id="cartao" class="bt-mtd-pgt">
+                <i class="fa-solid fa-credit-card"></i>
+                <p>CARTÃO</p>
+            </div>
+
+            <div id="boleto" class="bt-mtd-pgt">
+                <i class="fa-solid fa-barcode"></i>
+                <p>BOLETO</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <figure>
+            <img src="../imgs/rincao-gourmet.png" alt="Logo Rinção Gourmet">
+        </figure>
+
+        <nav class="links-rodape">
+            <a href="../index.html">Início</a>
+            <a href="../pags/cardapio.html">Menu</a>
+            <a href="#">Localização</a>
+            <a href="../pags/carrinho.html">Carrinho</a>
+            <a href="#">Trabalho</a>
+            <a href="#">Sobre nós</a>
+            <a href="#">FAQ</a>
+        </nav>
+
+        <div class="redes-sociais">
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+
+        <p>©️ Rinção Gourmet 2024</p>
+    </footer>
+
+    <script>
+        //por algum motivo, essa parte do codigo quando eu botava no arquivo "scripts.js" só ele funcionava e não deixava as outras funções de adicionar classe funcionar (que no caso seria as funções pra ativar a notificação de ter adicionado no carrinho). Então achei melhor deixar essa parte do codigo aqui mesmo... menos dor de cabeça, se resolveu então ta tudo certo
+        const btnPix = document.querySelector('#pix');
+        const btnCartao = document.querySelector('#cartao');
+        const btnBoleto = document.querySelector('#boleto');
+
+        // função pra add ou remover a classe btn-ativo nos botoes
+        function toggleBtnAtivo(element) {
+            if (element.classList.contains('btn-ativo')) {
+                element.classList.remove('btn-ativo');
+            } else {
+                element.classList.add('btn-ativo');
+            }
+        }
+
+        // eventos de click nos botoes dos metodos de pagamento
+        btnPix.addEventListener('click', () => toggleBtnAtivo(btnPix));
+        btnCartao.addEventListener('click', () => toggleBtnAtivo(btnCartao));
+        btnBoleto.addEventListener('click', () => toggleBtnAtivo(btnBoleto));
+    </script>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
