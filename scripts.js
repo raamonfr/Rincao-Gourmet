@@ -54,16 +54,20 @@ function irFinalizaCompra() {
 // Evento de click nos botoes "add-carrinho" pra aparecer a notificacaozinha show
 botaoAddCarrinho.forEach(botao => {
     botao.addEventListener('click', () => {
-        notificacao.classList.add('ativo');
-        tempo.classList.add('ativo');
-
-        setTimeout(() => {
-            notificacao.classList.remove('ativo');
-        }, 5000);
-
-        setTimeout(() => {
-            tempo.classList.remove('ativo');
-        }, 5300);
+        const isActive = notificacao.classList.contains('ativo');
+        if(!isActive){
+            console.log("estou ativo",botao.classList)
+            notificacao.classList.add('ativo');
+            tempo.classList.add('ativo');
+            
+            setTimeout(() => {
+                notificacao.classList.remove('ativo');
+            }, 5300);
+            
+            setTimeout(() => {
+                tempo.classList.remove('ativo');
+            }, 5300);
+        }
     });
 });
 
