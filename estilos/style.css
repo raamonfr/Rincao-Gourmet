@@ -219,7 +219,7 @@ main {
 }
 
 .avaliacao-comidas {
-    background-color: #F77720;
+    background: #f77722;
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -253,12 +253,7 @@ main {
 }
 
 #mini-cardapio-homepage {
-    background-image: linear-gradient(to bottom,  #F77720 5%,  white 10%);
     padding: 8rem 2.5rem 0 2.5rem;
-}
-
-#mini-cardapio-homepage h3 {
-    margin-top: 5rem;
 }
 
 .mini-cardapio {
