@@ -839,13 +839,19 @@ footer figure img {
     cursor: pointer;
 }
 
-.avaliacoes {
+.avaliacoes-pag {
     width: 70%;
     border-bottom: 2px #ddd solid;
     padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0;
+    gap: 2rem;
 }
 
-.avaliacoes textarea {
+.avaliacoes-pag textarea {
     resize: none;
     width: 80%;
     height: 300px;
@@ -854,7 +860,7 @@ footer figure img {
     border-color: #ddd;
 }
 
-.avaliacoes .inputs label{
+.avaliacoes-pag .inputs label{
     display: block;
     text-align: center;
 }
@@ -877,7 +883,7 @@ footer figure img {
     flex-direction: column;
 }
 
-.avaliacoes #pesquisa-comida, .pesquisa-comidaa {
+.avaliacoes-pag #pesquisa-comida, .pesquisa-comidaa {
     width: 100%;
     max-width: 500px;
 }

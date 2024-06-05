@@ -9,6 +9,10 @@
         flex-direction: row;
         gap: 3rem;
     }
+
+    .avaliacoes-pag {
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 950px) {
