@@ -55,6 +55,10 @@ function irparaavaliacao() {
     window.location.href = './pags/avaliacao.html'
 }
 
+function irparaavaliacao2() {
+    window.location.href = '../pags/avaliacao.html'
+}
+
 // Evento de click nos botoes "add-carrinho" pra aparecer a notificacaozinha show
 botaoAddCarrinho.forEach(botao => {
     botao.addEventListener('click', () => {
