@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="../estilos/style.css" media="all">
+    <link rel="stylesheet" href="../estilos/mediaquery.css">
+    <link rel="shortcut icon" href="../imgs/favicon/favicon.ico" type="image/x-icon">
+    <title>Rinção Gourmet</title>
+</head>
+<body>
+    <header id="cabecalho-finalizarCompra" class="cabecalho">
+        <nav class="nav-cabecalho-desktop">
+            <ul class="opcoes-nav">
+                <li><a href="../index.html">Início</a></li> 
+                <li><a href="../pags/cardapio.html">Menu</a></li>
+                <li><a href="#">Localização</a></li>
+            </ul>
+
+            <figure class="logo-cabecalho">
+                <a href="../index.html">
+                    <img src="../imgs/rincao-gourmet.png" alt="Logo Rinção Gourmet">
+                </a>
+            </figure>
+
+            <ul class="opcoes-nav">
+                <li><a href="../pags/carrinho.html">Carrinho</a></li>
+                <li><a href="#">Vagas</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-cabecalho-mobile">
+            <figure class="logo-cabecalho">
+                <a href="../index.html">
+                    <img src="../imgs/rincao-gourmet.png" alt="Logo Rinção Gourmet">
+                </a>
+            </figure>
+
+            <div class="menu-cabecalho-direito">
+                <a href="../pags/carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <i id="barras-menu" class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <section class="txt-cabecalho">
+            <p>Avaliação</p>
+        </section>
+
+        <nav id="barra-leteral-menu" class="barra-menu-lateral">
+            <figure id="logo-menu-lateral" class="logo-cabecalho">
+                <a href="../index.html">
+                    <img src="../imgs/rincao-gourmet.png" alt="Logo Rinção Gourmet">
+                </a>
+            </figure>
+
+            <p>Sempre oferencendo o melhor da culinária Pernambucana</p>
+
+            <ul class="lista-opcoes">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../pags/cardapio.html">Menu</a></li>
+                <li><a href="#">Localização</a></li>
+                <li><a href="../pags/carrinho.html">Carrinho</a></li>
+                <li><a href="#">Trabalho</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+
+            <button class="botao">Deixe sua avaliação</button>
+        </nav>
+    </header>
+
+
+    <main id="main-avaliacao">
+        <section class="avaliacoes">
+            <div class="img">
+                <h3>Sua foto (opcional)</h3>
+                <label tabindex="0" class="imagem">
+                    <input type="file" accept="image/*" id="input-imagem">
+                    <span class="txt-imagem-input"></span>
+                </label>
+            </div>
+
+            <div class="avaliacao-restaurante">
+                <h3>Em uma escala de 5 estrelas, o quanto você gostou da nossa comida?</h3>
+                <div class="estrelas-avaliacao">
+                    <i id="primeira-estrela" class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="avaliacoes">
+            <h3>Nos diga o que você achou:</h3>
+
+            <textarea name="nosdigaoqueachou" id="idnosdigaoqueachou"></textarea>
+        </section>
+
+        <section class="avaliacoes">
+            <h3>Onde você mora?</h3>
+
+            <section class="inputs-bairro">
+                <div class="inputs">
+                    <label for="idbairro">Bairro</label>
+                    <input type="text" id="idbairro">
+                </div>
+                <div class="inputs">
+                    <label for="idestado">Estado</label>
+                    <input type="text" id="idestado">
+                </div>
+            </section>
+        </section>
+
+        <section class="avaliacoes">
+            <h3>Avalie a comida que você mais gostou</h3>
+
+            <p>Pesquise a comida que você gostou:</p>
+
+            <input id="pesquisa-comida" type="text">
+
+            <div class="comidao-avaliacao">
+                <figure>
+                    <img src="../imgs/exemplo-gourmet1.jpg" alt="">
+                </figure>
+
+                <p>Comida Gourmet 1</p>
+
+                <p>Deixe sua avaliação numa escala de 5 estrelas</p>
+
+                <div class="estrelas-avaliacao">
+                    <i id="primeira-estrela" class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </section>
+
+        <button class="botao">Enviar avaliação</button>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <figure>
+            <img src="../imgs/rincao-gourmet.png" alt="Logo Rinção Gourmet">
+        </figure>
+
+        <nav class="links-rodape">
+            <a href="../index.html">Início</a>
+            <a href="../pags/cardapio.html">Menu</a>
+            <a href="#">Localização</a>
+            <a href="../pags/carrinho.html">Carrinho</a>
+            <a href="#">Trabalho</a>
+            <a href="#">Sobre nós</a>
+            <a href="#">FAQ</a>
+        </nav>
+
+        <div class="redes-sociais">
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+
+        <p>©️ Rinção Gourmet 2024</p>
+    </footer>
+
+    <script>
+        const inputImagem = document.querySelector('#input-imagem');
+        const txtInputImagem = document.querySelector('.txt-imagem-input')
+        txtInputImagem.innerHTML = 'Escolha uma imagem'
+
+        inputImagem.addEventListener('change', function(e) {
+            const inputTarget = e.target
+            const file = inputTarget.files[0]
+
+            if (file) {
+                const reader = new FileReader()
+
+                reader.addEventListener('load', function(e) {
+                    const readerTarget = e.target
+                    const img = document.createElement('img')
+                    img.src = readerTarget.result
+                    img.classList.add('imagem-img')
+                    txtInputImagem.innerHTML = ''
+                    txtInputImagem.appendChild(img)
+                })
+
+                reader.readAsDataURL(file)
+            } else {
+                txtInputImagem.innerHTML = 'Escolha uma imagem'
+            }
+
+        })
+    </script>
+</body>
+</html>
